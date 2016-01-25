@@ -1,6 +1,6 @@
 # fruitCatcher
 
-********* INSTALATION GUIDES **************
+#********* INSTALATION GUIDES **************
 1. Clone the project
 2. Navigate to the root
 3. Run: npm install
