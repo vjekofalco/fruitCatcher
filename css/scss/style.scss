@@ -1,0 +1,126 @@
+$size: 768px;
+
+.main{
+  width: $size;
+  margin: 0 auto;
+
+  .action-holder{
+    width: 100%;
+    height: 543px;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  .navigation{
+    width: 100%;
+    background-color: #BB9D51;
+    height: 60px;
+    border-bottom: 4px solid #E9CE57;
+
+    .left-nav{
+      width: 50%;
+      float: left;
+
+      .left-nav-ul-holder{
+        display: inline-block;
+        margin-left: -40px;
+      }
+
+      ul{
+
+        list-style-type: none;
+
+        li{
+          display: inline-block;
+          float: left;
+          padding-right: 15px;
+
+          .left-nav-list-item{
+            float: left;
+          }
+
+          h3{
+            margin: 7px 0 0 10px;
+            font-size: 20px;
+            color: white;
+            text-shadow: 0.1em 0.1em 0.2em black;
+
+          }
+        }
+
+      }
+    }
+
+    .right-nav{
+      @extend .left-nav;
+
+      ul{
+
+        list-style-type: none;
+
+        li{
+          display: inline-block;
+          float: right;
+          padding-right: 15px;
+          padding-left: 15px;
+          border-left: 1px solid #AD9047;
+          cursor: pointer;
+        }
+
+      }
+
+    }
+  }
+
+  .image-path{
+    bottom: 0;
+    position: absolute;
+    width: $size;
+
+    .hungry-eyes{
+      position: relative;
+      left: 0;
+      display: none;
+    }
+  }
+
+  .fruit{
+    position: absolute;
+  }
+
+  .enter-box{
+    width: 299px;
+    height: 159px;
+    background-image: url("../img/popup.png");
+    background-size: cover;
+    vertical-align: middle;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+
+    h3{
+      color: white;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      cursor: pointer;
+      float: left;
+      padding-right: 15px;
+      padding-left: 7px;
+    }
+
+    .options{
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    p{
+      font-size: 27px;
+      color: white;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      position: relative;
+      top: 9%;
+    }
+  }
+}
+
